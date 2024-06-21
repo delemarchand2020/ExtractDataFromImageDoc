@@ -2,7 +2,7 @@ Le notebook "PoC_extraction_avec_VLM.ipynb" met en œuvre le modèle VLM de Micr
 Voici les détails :
 
 1. **Installation des librairies** nécessaires telles que `torch` et `transformers`.
-2. **Chargement des images** depuis Google Drive.
+2. **Chargement des images** au format .png.
 3. **Configuration et chargement du modèle** : Le modèle `microsoft/Phi-3-vision-128k-instruct` est configuré pour une quantization en 4 bits, prête à être utilisée si nécessaire, bien que non essentielle avec un GPU L4 sur Google Colab.
 4. **Inférence** : La fonction `model_inference` gère l'extraction de texte à partir des images, préparant les entrées pour le modèle et exécutant l'extraction. Les résultats sont ensuite décodés.
 5. **Tests d'extraction** : Des tests sont effectués sur différentes images pour démontrer l'efficacité du modèle à extraire les informations.
